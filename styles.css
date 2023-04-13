@@ -21,7 +21,7 @@ ul li {
 }
 
 header {
-  width: 100%;
+  min-width: 100%;
   background: #345d50;
   color: #eee;
   padding: 1rem;
@@ -96,7 +96,7 @@ header {
 }
 
 footer {
-  width: 100%;
+  min-width: 100%;
   margin-top: 10.6%;
   background: #345d50;
   color: #eee;
