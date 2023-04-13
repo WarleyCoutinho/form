@@ -6,6 +6,8 @@ const errrorMessege = document.querySelector('.msg');
 
 const items = document.querySelector('.items');
 
+const body = document.querySelector('body');
+
 const submitButton = document.querySelector('#submit-button');
 
 const setTime = () => {
@@ -15,6 +17,10 @@ const setTime = () => {
   }, 3000);
 };
 
+const refreshAuto = () => {
+  location.reload();
+};
+
 submitButton.addEventListener('click', (e) => {
   e.preventDefault();
 
@@ -22,23 +28,25 @@ submitButton.addEventListener('click', (e) => {
   const emailValue = emailInput.value;
 
   if (nameValue === '' && emailValue === '') {
-    errrorMessege.textContent = 'Required fields';
+    errrorMessege.textContent = 'required fields';
     errrorMessege.classList = 'error';
     setTime();
+    body.style.background = 'red';
     return;
   } else if (nameValue === '') {
-    errrorMessege.textContent = 'Required name';
+    errrorMessege.textContent = 'required name';
     errrorMessege.classList = 'error';
     setTime();
     return;
   } else if (emailValue === '') {
-    errrorMessege.textContent = 'Required email';
+    errrorMessege.textContent = 'required email';
     errrorMessege.classList = 'error';
     setTime();
     return;
   } else {
     errrorMessege.textContent = 'Data sent with successes';
     errrorMessege.classList = 'success';
+    body.style.background = '#15803d';
     setTime();
   }
 
@@ -50,6 +58,8 @@ submitButton.addEventListener('click', (e) => {
   emailInput.value = '';
 
   setTimeout(() => {
+    body.style.background = '';
     items.remove();
+    refreshAuto();
   }, 3000);
 });

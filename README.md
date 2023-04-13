@@ -1,4 +1,4 @@
-# form
+# Form data validation and DOM manipulation with JavaScript.
 
 # O que é validação de formulário?
 

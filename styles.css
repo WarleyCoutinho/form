@@ -7,7 +7,7 @@
 body {
   font-family: 'Archivo', Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background: #262626;
+  background: #f0f0f0;
 }
 
 ul {
@@ -21,7 +21,8 @@ ul li {
 }
 
 header {
-  background: #111;
+  width: 100%;
+  background: #345d50;
   color: #eee;
   padding: 1rem;
   text-align: center;
@@ -36,7 +37,7 @@ header {
 
 #my-form {
   padding: 2rem;
-  background: #f4f4f4;
+  background: #fff;
   border-radius: 10px;
 }
 
@@ -49,7 +50,11 @@ header {
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #345d50;
+}
+
+#my-form:hover {
+  border: 1px solid #15803d;
 }
 
 .btn {
@@ -57,14 +62,17 @@ header {
   width: 100%;
   padding: 10px 15px;
   border: 0;
-  background: #262626;
+  background: #345d50;
   color: #fff;
   border-radius: 5px;
   margin: 5px 0;
 }
+.text {
+  color: #345d50;
+}
 
 .btn:hover {
-  background: #444;
+  background: #15803d;
 }
 
 .bg-dark {
@@ -80,9 +88,17 @@ header {
   border-radius: 5px;
 }
 .success {
-  background: green;
+  background: #15803d;
   color: #fff;
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 10.6%;
+  background: #345d50;
+  color: #eee;
+  text-align: center;
 }
