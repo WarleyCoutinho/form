@@ -109,6 +109,10 @@ footer {
   footer {
     min-width: 100%;
   }
+  ul li {
+    margin-left: -25px;
+    width: 80%;
+  }
   #my-form {
     margin-left: -25px;
     width: 80%;
