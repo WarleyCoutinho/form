@@ -21,7 +21,6 @@ ul li {
 }
 
 header {
-  min-width: 100%;
   background: #345d50;
   color: #eee;
   padding: 1rem;
@@ -101,4 +100,13 @@ footer {
   background: #345d50;
   color: #eee;
   text-align: center;
+}
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  header {
+    max-width: 100%;
+  }
+  footer {
+    max-width: 100%;
+  }
 }
