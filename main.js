@@ -18,6 +18,7 @@ const setTime = () => {
   setTimeout(() => {
     errrorMessege.textContent = '';
     errrorMessege.classList = '';
+    body.style.background = '';
   }, 3000);
 };
 
@@ -47,8 +48,8 @@ submitButton.addEventListener('click', (e) => {
   if (nameValue === '' && emailValue === '') {
     errrorMessege.textContent = 'required fields';
     errrorMessege.classList = 'error';
-    setTime();
     body.style.background = 'red';
+    setTime();
     return;
   } else if (nameValue === '') {
     errrorMessege.textContent = 'required name';
