@@ -7,7 +7,16 @@
 body {
   font-family: 'Archivo', Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background: #f0f0f0;
+
+  background: radial-gradient(hsl(0, 0%, 0%) 15%, transparent 16%) 0 0,
+    radial-gradient(hsl(0, 0%, 0%) 15%, transparent 16%) 8px 8px,
+    radial-gradient(hsla(0, 0%, 100%, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(hsla(0, 0%, 100%, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: hsl(0, 0%, 16%);
+  background-size: 16px 16px;
+  overflow-x: hidden;
+
+  min-height: 100%;
 }
 
 ul {
@@ -16,13 +25,13 @@ ul {
 
 ul li {
   padding: 5px;
-  background: #f4f4f4;
+  background: hsl(0, 0%, 96%);
   margin: 5px 0;
 }
 
 header {
-  background: #345d50;
-  color: #eee;
+  background: hsla(0, 0%, 0%, 0.3);
+  color: hsl(0, 0%, 93%);
   padding: 1rem;
   text-align: center;
 }
@@ -36,7 +45,7 @@ header {
 
 #my-form {
   padding: 2rem;
-  background: #ffffff;
+  background: hsl(0, 0%, 100%);
   border-radius: 10px;
 }
 
@@ -49,11 +58,7 @@ header {
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #345d50;
-}
-
-#my-form:hover {
-  border: 1px solid #15803d;
+  border: 1px solid hsl(0, 0%, 16%);
 }
 
 .btn {
@@ -61,42 +66,42 @@ header {
   width: 100%;
   padding: 10px 15px;
   border: 0;
-  background: #345d50;
-  color: #fff;
+  background: hsl(0, 0%, 16%);
+  color: hsl(0, 0%, 100%);
   border-radius: 5px;
   margin: 5px 0;
 }
 .text {
-  color: #345d50;
+  color: hsl(0, 0%, 4%);
 }
 
 .btn:hover {
-  background: #15803d;
+  background: hsl(0, 0%, 4%);
 }
 
 .bg-dark {
-  background: #333;
-  color: #fff;
+  background: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
 }
 
 .error {
-  background: orangered;
-  color: #fff;
+  background: hsl(16, 100%, 50%);
+  color: hsl(0, 0%, 100%);
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
 }
 .success {
-  background: #15803d;
-  color: #fff;
+  background: hsl(142, 72%, 29%);
+  color: hsl(0, 0%, 100%);
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
 }
 .clock {
   display: flex;
-  background: #345d50;
-  color: #eee;
+  background: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 93%);
   margin-left: 40%;
   border-radius: 5px;
   justify-content: center;
@@ -105,8 +110,9 @@ header {
 
 footer {
   min-width: 100%;
+  background: hsla(0, 0%, 0%, 0.3);
   margin-top: 11%;
-  color: #345d50;
+  color: hsl(0, 0%, 93%);
   text-align: center;
 }
 
@@ -116,6 +122,7 @@ footer {
   }
   footer {
     min-width: 100%;
+    background: none;
   }
   ul li {
     margin-left: -25px;
