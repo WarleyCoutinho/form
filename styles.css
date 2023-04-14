@@ -31,7 +31,7 @@ header {
   margin: auto;
   width: 500px;
   overflow: auto;
-  padding: 3rem 2rem;
+  padding: 2rem 1rem;
 }
 
 #my-form {
@@ -93,10 +93,19 @@ header {
   margin: 5px;
   border-radius: 5px;
 }
+.clock {
+  display: inline-flex;
+  background: #345d50;
+  color: #eee;
+  margin-left: 40%;
+  border-radius: 5px;
+  justify-content: center;
+  width: 60%;
+}
 
 footer {
   min-width: 100%;
-  margin-top: 10.6%;
+  margin-top: 11%;
   background: #345d50;
   color: #eee;
   text-align: center;

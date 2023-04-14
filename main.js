@@ -8,6 +8,8 @@ const items = document.querySelector('.items');
 
 const submitButton = document.querySelector('#submit-button');
 
+const clock = document.querySelector('.clock');
+
 const currentYear = document.querySelector('.currentYear');
 
 const body = document.querySelector('body');
@@ -23,7 +25,18 @@ const refreshAuto = () => {
   location.reload();
 };
 
-currentYear.innerHTML = `${moment().format(' YYYY ')}`;
+const today = () => {
+  const hours = moment().format(' L | HH:mm:ss');
+  clock.innerHTML = `Hoje ${hours}`;
+};
+
+setInterval(() => {
+  today();
+}, 1000);
+
+const date = moment().format(' YYYY ');
+
+currentYear.textContent = `${date}`;
 
 submitButton.addEventListener('click', (e) => {
   e.preventDefault();
