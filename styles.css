@@ -94,7 +94,7 @@ header {
   border-radius: 5px;
 }
 .clock {
-  display: inline-flex;
+  display: flex;
   background: #345d50;
   color: #eee;
   margin-left: 40%;
@@ -125,5 +125,9 @@ footer {
   #my-form {
     margin-left: -25px;
     width: 80%;
+  }
+  .clock {
+    margin-left: -5px;
+    width: 100%;
   }
 }
