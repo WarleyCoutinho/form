@@ -6,9 +6,11 @@ const errrorMessege = document.querySelector('.msg');
 
 const items = document.querySelector('.items');
 
-const body = document.querySelector('body');
-
 const submitButton = document.querySelector('#submit-button');
+
+const currentYear = document.querySelector('.currentYear');
+
+const body = document.querySelector('body');
 
 const setTime = () => {
   setTimeout(() => {
@@ -20,6 +22,8 @@ const setTime = () => {
 const refreshAuto = () => {
   location.reload();
 };
+
+currentYear.innerHTML = `${moment().format(' YYYY ')}`;
 
 submitButton.addEventListener('click', (e) => {
   e.preventDefault();
