@@ -36,7 +36,7 @@ header {
 
 #my-form {
   padding: 2rem;
-  background: #fff;
+  background: #ffffff;
   border-radius: 10px;
 }
 
@@ -104,9 +104,13 @@ footer {
 
 @media screen and (min-width: 200px) and (max-width: 768px) {
   header {
-    max-width: 100%;
+    min-width: 100%;
   }
   footer {
-    max-width: 100%;
+    min-width: 100%;
+  }
+  #my-form {
+    margin-left: -34px;
+    width: 80%;
   }
 }
