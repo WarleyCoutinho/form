@@ -28,7 +28,7 @@ const refreshAuto = () => {
 
 const today = () => {
   const hours = moment().format(' DD/MM/YYYY HH:mm:ss');
-  clock.innerHTML = `Hoje ${hours}`;
+  clock.innerHTML = `Today: ${hours}`;
 };
 
 setInterval(() => {
